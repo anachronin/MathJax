@@ -676,7 +676,42 @@ AMquote,
 {input:"tt",  tag:"mstyle", atname:"mathvariant", atval:"monospace", output:"tt", tex:null, ttype:UNARY},
 {input:"mathtt", tag:"mstyle", atname:"mathvariant", atval:"monospace", output:"mathtt", tex:null, ttype:UNARY},
 {input:"fr",  tag:"mstyle", atname:"mathvariant", atval:"fraktur", output:"fr", tex:null, ttype:UNARY, codes:AMfrk},
-{input:"mathfrak",  tag:"mstyle", atname:"mathvariant", atval:"fraktur", output:"mathfrak", tex:null, ttype:UNARY, codes:AMfrk}
+{input:"mathfrak",  tag:"mstyle", atname:"mathvariant", atval:"fraktur", output:"mathfrak", tex:null, ttype:UNARY, codes:AMfrk},
+
+// 2019-08-06 joel: units
+{input:"#degf",  tag:"mo", output:"\u02DA\u0046", tex:null, ttype:CONST},
+{input:"#degc",  tag:"mo", output:"\u02DA\u0043", tex:null, ttype:CONST},
+{input:"#deg",  tag:"mo", output:"\u02DA", tex:null, ttype:CONST},
+{input:"#km",  tag:"mo", output:"km", tex:null, ttype:CONST},
+{input:"#m",  tag:"mo", output:"m", tex:null, ttype:CONST},
+{input:"#cm",  tag:"mo", output:"cm", tex:null, ttype:CONST},
+{input:"#kg",  tag:"mo", output:"kg", tex:null, ttype:CONST},
+{input:"#g",  tag:"mo", output:"g", tex:null, ttype:CONST},
+{input:"#s",  tag:"mo", output:"s", tex:null, ttype:CONST},
+{input:"#min",  tag:"mo", output:"min", tex:null, ttype:CONST},
+{input:"#hr",  tag:"mo", output:"hr", tex:null, ttype:CONST},
+{input:"#h",  tag:"mo", output:"h", tex:null, ttype:CONST},
+{input:"#ms-1",  tag:"mo", output:"ms^-1", tex:null, ttype:CONST},
+{input:"#N",  tag:"mo", output:"N", tex:null, ttype:CONST},
+
+// 2019-08-06 joel: math shorthand
+{input:"s.f.",  tag:"mo", output:"s.f.", tex:null, ttype:CONST}, // significant figure
+{input:"d.p.",  tag:"mo", output:"d.p.", tex:null, ttype:CONST}, // decimal place
+
+// 2019-08-06 joel: currency
+{input:"#cent",  tag:"mo", output:"\u00A2", tex:null, ttype:CONST},
+{input:"#euro",  tag:"mo", output:"\u20AC", tex:null, ttype:CONST},
+{input:"#pound",  tag:"mo", output:"\u00A3", tex:null, ttype:CONST},
+{input:"#baht",  tag:"mo", output:"\u0E3F", tex:null, ttype:CONST},
+{input:"#yen",  tag:"mo", output:"\u00A5", tex:null, ttype:CONST},
+{input:"#yuan",  tag:"mo", output:"\u00A5", tex:null, ttype:CONST},
+{input:"#won",  tag:"mo", output:"\u20A9", tex:null, ttype:CONST},
+{input:"#peso",  tag:"mo", output:"\u20B1", tex:null, ttype:CONST},
+{input:"#ruble",  tag:"mo", output:"\u20BD", tex:null, ttype:CONST},
+{input:"#riyal",  tag:"mo", output:"\uFDFC", tex:null, ttype:CONST},
+{input:"#rupee",  tag:"mo", output:"\u20A8", tex:null, ttype:CONST},
+{input:"#bitcoin",  tag:"mo", output:"\u20BF", tex:null, ttype:CONST},
+
 ];
 
 function compareNames(s1,s2) {
